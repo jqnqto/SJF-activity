@@ -6,23 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="javascript" href="script.js">
+    <script src="script.js"></script>
     <title>index</title>
 </head>
 <body>
-    <h1>Shortest Job First Non-Preemptive</h1>
+    <h1 style="text-align: center;">Shortest Job First Non-Preemptive</h1>
 
-    <form>
-        <input type="text" id="job" placeholder="Job">
-        <input type="text" id="arrival" placeholder="Arrival Time">
-        <input type="text" id="burst" placeholder="Burst Time">
-    </form>
-
-    <div>
-        <input type="submit" name="insert" id="insert" value="ADD JOB" onclick="tableUpdate();">
+    <div style="text-align: left;">
+        <form id="form1">
+            <input type="number" id="job" placeholder="Job" disabled>
+            <input type="number" id="arrival" placeholder="Arrival Time">
+            <input type="number" id="burst" placeholder="Burst Time">
+            <button onclick="addRow();" id="button1">ADD JOB</button>
+        </form id="form1" >
     </div>
-   <br><br><br><br>
-    <form method="POST" id="user_form">
+    
+    <div>
+        <p>Time:</p>
+        <p>Average WT:</p>
+    </div>
+    <!-- <form method="POST" id="user_form"> -->
         <table id="table">
             <tr>
                 <th>Job</th>
@@ -32,6 +35,8 @@
                 <th>Finish Time</th>
             </tr>
         </table>
-    </form>
+    <!-- </form> -->
+    <br><br>
+    <h3>Gantt Chart</h3>
 </body>
 </html>
