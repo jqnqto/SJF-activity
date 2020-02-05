@@ -13,12 +13,13 @@
     <h1 style="text-align: center;">Shortest Job First Non-Preemptive</h1>
 
     <div style="text-align: left;">
-        <form id="form1">
+        <form id="form1" method="post">
             <input type="number" id="job" placeholder="Job" disabled>
             <input type="number" id="arrival" placeholder="Arrival Time">
             <input type="number" id="burst" placeholder="Burst Time">
-            <button onclick="addRow();" id="button1">ADD JOB</button>
-        </form id="form1" >
+            <!-- <button onclick="addRow();" id="button1">ADD JOB</button> -->
+        </form>
+        <button onclick="addRow();" id="button1">ADD JOB</button>
     </div>
     
     <div>
@@ -35,6 +36,7 @@
                 <th>Finish Time</th>
             </tr>
         </table>
+        <button onclick="start();" id="button1">START</button>
     <!-- </form> -->
     <br><br>
     <h3>Gantt Chart</h3>
